@@ -17,7 +17,8 @@
     "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules",
@@ -27,5 +28,10 @@
     "webpack",
     "jest",
     "src/setupTests.ts"
-  ]
+  ],
+  "rules": {
+    "ordered-imports": false,
+    "import-sources-order": "any",
+    "named-imports-order": "any"
+ }
 }
