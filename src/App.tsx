@@ -1,11 +1,12 @@
 import * as React from 'react';
+import {observer} from 'mobx-react';
 import './App.css';
 import logo from './logo.svg';
 import MyState from './mystate';
-// import { observer } from 'mobx-react';
+
 
 const newState = new MyState();
-//@observer
+@observer
 class App extends React.Component {
   public render() {
     return (
